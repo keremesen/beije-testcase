@@ -317,7 +317,7 @@ const Tabs = (props: Props) => {
             ""
           )}
 
-          <button className="bg-[#262626] text-white rounded-xl p-2 font-semibold mt-4 " onClick={handleOpen} >
+          <button disabled={basket===0} className="bg-[#262626] text-white rounded-xl p-2 font-semibold mt-4 disabled:bg-gray-200 disabled:text-gray-300 " onClick={handleOpen}  >
             Sepete Ekle (₺{basket})
           </button>
           </div>
