@@ -49,7 +49,8 @@ const Tabs = (props: Props) => {
   };
   return (
     <TabContext value={value1}>
-      <Box sx={{ marginTop: 4 }}>
+      <Box
+       sx={{ marginTop: 4 , display:"flex" , justifyContent:"center", alignItems:"center" }} >
         <TabList
           onChange={handleChange}
           aria-label="lab API tabs example"
@@ -68,7 +69,7 @@ const Tabs = (props: Props) => {
               textTransform: "none",
               fontWeight: "700",
             }}
-            className="w-[124px] md:min-w-[160px]"
+            className="w-[114px] lg:min-w-[160px]"
           />
           <Tab
             label="beije Günlük Ped"
@@ -79,7 +80,7 @@ const Tabs = (props: Props) => {
              
               fontWeight: "700",
             }}
-            className="w-[124px] md:min-w-[160px]"
+            className="w-[114px] lg:min-w-[160px] "
           />
           <Tab
             label="beije Tampon"
@@ -90,7 +91,7 @@ const Tabs = (props: Props) => {
               
               fontWeight: "700",
             }}
-            className="w-[124px] lg:min-w-[160px]"
+            className="w-[114px] lg:min-w-[160px]"
           />
         </TabList>
       </Box>
