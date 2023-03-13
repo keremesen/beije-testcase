@@ -35,7 +35,7 @@ const CustomPacket = (props: Props) => {
             Tercih ve ihtiyaçların doğrultusunda seçeceğin ürünlerden ve
             miktarlardan, sana özel bir paket oluşturalım.
           </text>
-        <Tabs />
+          <Tabs />
         </div>
         <div className="bg-white rounded-2xl h-auto p-8  w-[444px]   flex-col hidden md:flex ">
           <text className="text-2xl font-semibold mb-6">Özel Paketin</text>
@@ -170,8 +170,10 @@ const CustomPacket = (props: Props) => {
           ) : (
             ""
           )}
-
-          <button className="bg-[#262626] text-white rounded-xl p-2 font-semibold mt-4 ">
+          <button
+            disabled={basket === 0}
+            className="bg-[#262626] text-white rounded-full p-2 font-semibold mt-4  disabled:bg-gray-200 disabled:text-gray-400"
+          >
             Sepete Ekle (₺{basket})
           </button>
         </div>
